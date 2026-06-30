@@ -284,7 +284,7 @@ const MapPage = () => {
         toastStyle={{ backgroundColor: "#ffffff", border: "1px solid #c9d8e6" }}
       />
 
-      <div className="flex h-[calc(100vh-72px)] min-h-0 flex-col gap-2 overflow-y-auto py-2 xl:overflow-hidden">
+      <div className="flex h-[calc(100vh-72px)] min-h-0 flex-col gap-2 overflow-y-auto py-2">
         <SystemAlerts />
         <NavStatus onCancelGoal={cancelGoal} />
         <MapLayers />
@@ -300,7 +300,7 @@ const MapPage = () => {
         </section>
 
         {/* Controls row */}
-        <section className="flex w-full shrink-0 items-stretch gap-3 xl:h-[112px]">
+        <section className="flex w-full shrink-0 items-stretch gap-3 xl:min-h-[112px]">
           {/* Joystick */}
           <div className="flex w-[110px] shrink-0 flex-col items-center justify-center gap-1 rounded-xl border border-borderSubtle bg-bgCard p-2 sm:w-[124px] 2xl:w-[136px]">
             <p className="font-[RobotoMono] text-xs uppercase tracking-wider text-themeTextGray">
