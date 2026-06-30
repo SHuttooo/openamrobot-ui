@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-yaml \
     ros-${ROS_DISTRO}-nav2-msgs \
     ros-${ROS_DISTRO}-nav2-simple-commander \
+    ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
     ros-${ROS_DISTRO}-rosapi \
     ros-${ROS_DISTRO}-rosbridge-server \
     ros-${ROS_DISTRO}-rosidl-default-generators \
