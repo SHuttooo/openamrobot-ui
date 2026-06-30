@@ -3,7 +3,7 @@ import { AppConfig } from "../shared/constants/index";
 
 const Camera = () => {
   const [videoSrc, setVideoSrc] = useState("");
-  const [topic, setTopic] = useState("/rgb_image");
+  const [topic, setTopic] = useState("/camera/image_raw");
   const [quality, setQuality] = useState("balanced");
   const [status, setStatus] = useState("idle");
 
