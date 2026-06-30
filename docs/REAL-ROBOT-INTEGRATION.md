@@ -127,9 +127,9 @@ nodes re-publish them as **VOLATILE**.
 These are the only deployment-specific spots (defaults are generic):
 
 1. **Camera topic** — defaulted to `/camera/image_raw` (this robot). *(done)*
-2. **Dev rosbridge IP** — `web/src/shared/constants/index.js`
-   `ROSBRIDGE_SERVER_IP` (only used by `npm run dev` from a separate PC; the
-   deployed `:5050` case auto-resolves). Set to `172.17.201.29` for PC dev.
+2. **Dev rosbridge IP** — only used by `npm run dev` from a separate PC (the
+   deployed `:5050` case auto-resolves). Set `REACT_APP_ROSBRIDGE_IP=172.17.201.29`
+   (see `.env.example`); falls back to the hard-coded default otherwise.
 3. **Standby pose after undock** — `web/src/components/DockingControl.jsx`
    (`STANDBY_POSE` ~line 6): set to a real free pose on the `piece_actuelle`
    map.

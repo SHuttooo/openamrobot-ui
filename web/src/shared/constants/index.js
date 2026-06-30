@@ -1,5 +1,8 @@
 export const AppConfig = {
-  ROSBRIDGE_SERVER_IP: "192.168.0.100",
+  // Dev fallback only (npm run dev on localhost:3000). The deployed case (Flask
+  // on :5050) auto-resolves rosbridge to window.location.hostname. Override for
+  // PC dev with REACT_APP_ROSBRIDGE_IP (see .env.example).
+  ROSBRIDGE_SERVER_IP: process.env.REACT_APP_ROSBRIDGE_IP || "192.168.0.100",
   ROSBRIDGE_SERVER_PORT: "9090",
   CAMERA_PORT: "8080",
   RECONNECTION_TIME: 1000,
